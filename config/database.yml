@@ -8,9 +8,14 @@ development:
   # port:
 
 production:
-  adapter: sqlite
-  database: data/inferno_production.db
+  #adapter: sqlite
+  #database: data/inferno_production.db
+  #max_connections: 10
+  adapter: postgres
+  database: inferno_production
   max_connections: 10
+  user: postgres
+  host: inferno_db
 
 test:
   adapter: sqlite

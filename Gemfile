@@ -8,3 +8,5 @@ group :development, :test do
   gem 'debug'
   gem 'rack-test'
 end
+
+gem 'pg'
