@@ -28,7 +28,7 @@ services:
     volumes:
       - ./config/nginx.background.conf:/etc/nginx/nginx.conf
     ports:
-      - "80:80"
+      - "9080:9080"
     command: [nginx, '-g', 'daemon off;']
     # depends_on:
     #   - fhir_validator_app
